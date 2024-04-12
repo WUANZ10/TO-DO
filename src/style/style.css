@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+ul {
+  list-style: none;
+}
+
+form {
+  width: 100%;
+}
+
+svg {
+  width: 16px;
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Body -->Boostrap */
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  font-weight: bold;
+  border: 1px solid white;
+  border-bottom: 4px solid blue;
+  transition: 0.4s;
+}
+.nav-tabs .nav-link {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.nav-tabs .nav-link:active {
+  background: linear-gradient(
+    to top,
+    rgba(49, 48, 48, 0.216),
+    rgba(255, 255, 255, 0.293)
+  );
+}
+
+/* Body --> add-todos */
+.add-todos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.add-todos input {
+  font-size: 16px;
+  padding: 8px 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.add-todos button {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 8px 5px;
+  font-size: 16px;
+  width: 60px;
+  border-radius: 10px;
+}
+
+/* Body --> content-todos */
+.task-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 50px;
+}
+
+.task-detail ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-detail ul input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+.task-detail ul li {
+  font-size: 16px;
+}
+
+.completed-task li {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+/* Delete all */
+.delete-all {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+.delete-all button {
+  padding: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
